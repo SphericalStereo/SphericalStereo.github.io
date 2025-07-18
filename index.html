@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Paper Title</title>
+  <title>Spherical Epipolar Rectification for Deep Two-View Absolute Depth Estimation</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
     body {
@@ -84,32 +84,36 @@
 <body>
 
 <header>
-  <h1>Your Paper Title</h1>
-  <div class="authors">Pierre-André Brousseau, Co-author Name, Another Co-author</div>
-  <div class="conference">Conference Name 2025</div>
+  <h1>Spherical Epipolar Rectification for Deep Two-View Absolute Depth Estimation</h1>
+  <div class="authors">Pierre-André Brousseau, Sébastien Roy</div>
+  <div class="conference">ICCV 2025</div>
   <div class="buttons">
-    <a href="paper.pdf" target="_blank"><i class="fas fa-file-pdf"></i>Paper</a>
-    <a href="https://github.com/your-repo" target="_blank"><i class="fab fa-github"></i>Code</a>
-    <a href="https://youtu.be/yourvideo" target="_blank"><i class="fab fa-youtube"></i>Video</a>
+    <a href="https://v3d.iro.umontreal.ca/" target="_blank"><i class="fas fa-file-pdf"></i>Paper</a>
+    <a href="https://gitlab.com/labv3d/spherical-stereo" target="_blank"><i class="fab fa-github"></i>Code</a>
+    <!--<a href="https://youtu.be/yourvideo" target="_blank"><i class="fab fa-youtube"></i>Video</a>-->
   </div>
 </header>
 
 <section>
   <h2>Abstract</h2>
   <p>
-    Write your abstract here. Describe the motivation, your method, and results in a few sentences.
+    Absolute depth estimation from single camera sequence of images is a relevant task given that mobile machines increasingly rely on vision to navigate. Deep learning for stereo matching has been demonstrated to improve performance for stereo rectified depth estimation but these methods require straightforward left-right camera setups. This work proposes to introduce deep stereo matching to two views of a monocular image sequence obtained from a camera in motion in a static scene. This paper introduces a novel and principled spherical epipolar rectification model, which handles all camera motions. This rectification model is differentiable and allows self-supervised deep stereo matching algorithms to compute disparity and recover depth, given known camera pose. This paper also introduces a spherical crop operation which limits rectified image size and allows for competitive absolute depth estimation performance. This results in a spherical rectification model that is demonstrated to provide metric depth and compete favorably with a current state-of-the-art monocular depth estimator.
   </p>
 </section>
 
 <section>
-  <h2>Video</h2>
-  <iframe src="https://www.youtube.com/embed/yourvideoID" allowfullscreen></iframe>
+  <h2>Rectification Visualization</h2>
+  <iframe src="https://www.youtube.com/embed/YDH5inoX8TY" allowfullscreen></iframe>
+  <h2>Depth Visualization</h2>
+  <iframe src="https://www.youtube.com/embed/S8hiRpI4KVY" allowfullscreen></iframe>
 </section>
 
+<!--
 <section>
   <h2>Teaser</h2>
   <img src="teaser.png" alt="Teaser image" />
 </section>
+-->
 
 <section>
   <h2>BibTeX</h2>
@@ -124,7 +128,7 @@
 </section>
 
 <footer>
-  &copy; 2025 Your Name. Built without frameworks.
+  &copy; 2025 LabV3D. Built without frameworks.
 </footer>
 
 </body>
