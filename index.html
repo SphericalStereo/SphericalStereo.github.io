@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to My Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Paper Title</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+    h1 {
+      font-size: 2em;
+      color: #000;
+    }
+    h2 {
+      font-size: 1.3em;
+      color: #444;
+      border-bottom: 1px solid #ddd;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .authors, .conf {
+      margin-bottom: 1em;
+      font-style: italic;
+    }
+    .teaser {
+      width: 100%;
+      max-width: 100%;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+    }
+    .section {
+      margin-top: 2em;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>This is my GitHub Pages site.</p>
-</body>
-</html>
+  <h1>Your Paper Title Here</h1>
+
+  <div class="authors">Pierre-André Brousseau, Co-author Name, Another Co-author</div>
+
+  <div class="conf">Accepted at <strong>Conference Name 2025</strong>, Location</div>
+
+  <!-- Optional teaser image -->
+  <!-- <img class="teaser" src="teaser.png" alt="Teaser image" /> -->
+
+  <div class="section">
+    <h2>Abstract</h2>
+    <p>
+      Replace this paragraph with your paper's abstract. Summarize your contributions, approach, and findings in 3–5 sentences.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>PDF</h2>
+    <p><a href="paper.pdf" target="_blank">Download Paper</a></p>
+  </div>
+
+  <div class="section">
+    <h2>BibTeX</h2>
+    <pre>
+@inproceedings{yourBibtexKey,
+  title={Your Paper Title},
+  author={Brousseau, Pierre-André and Coauthor, X},
+  booktitle={Proceedings of Conference Name},
+  year={2025}
+}
+    </pre>
+  </div>
+
+  <!-- Optional: Code or Video -
