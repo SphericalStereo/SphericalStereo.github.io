@@ -89,14 +89,14 @@
   <div class="conference">ICCV 2025</div>
   <div class="buttons">
     <a href="https://v3d.iro.umontreal.ca/" target="_blank"><i class="fas fa-file-pdf"></i>Paper</a>
-    <a href="https://gitlab.com/labv3d/spherical-stereo" target="_blank"><i class="fab fa-github"></i>Code</a>
+    <a href="https://gitlab.com/labv3d/spherical-stereo" target="_blank"><i class="fab fa-gitlab"></i>Code</a>
     <!--<a href="https://youtu.be/yourvideo" target="_blank"><i class="fab fa-youtube"></i>Video</a>-->
   </div>
 </header>
 
 <section>
   <h2>Abstract</h2>
-  <p>
+  <p style="text-align:justify;"> 
     Absolute depth estimation from single camera sequence of images is a relevant task given that mobile machines increasingly rely on vision to navigate. Deep learning for stereo matching has been demonstrated to improve performance for stereo rectified depth estimation but these methods require straightforward left-right camera setups. This work proposes to introduce deep stereo matching to two views of a monocular image sequence obtained from a camera in motion in a static scene. This paper introduces a novel and principled spherical epipolar rectification model, which handles all camera motions. This rectification model is differentiable and allows self-supervised deep stereo matching algorithms to compute disparity and recover depth, given known camera pose. This paper also introduces a spherical crop operation which limits rectified image size and allows for competitive absolute depth estimation performance. This results in a spherical rectification model that is demonstrated to provide metric depth and compete favorably with a current state-of-the-art monocular depth estimator.
   </p>
 </section>
@@ -118,10 +118,10 @@
 <section>
   <h2>BibTeX</h2>
   <pre>
-@inproceedings{yourBibtexKey,
-  title={Your Paper Title},
-  author={Brousseau, Pierre-André and Coauthor, X},
-  booktitle={Conference Name},
+@inproceedings{brousseau2025spherical,
+  title={Spherical Epipolar Rectification for Deep Two-View Absolute Depth Estimation},
+  author={Brousseau, Pierre-André and Roy, Sébastien},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
   year={2025}
 }
   </pre>
