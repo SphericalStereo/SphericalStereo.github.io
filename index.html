@@ -2,87 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Paper Title</title>
   <style>
     body {
-      font-family: Georgia, serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       line-height: 1.6;
-      background-color: #fdfdfd;
       color: #333;
+      background: #fafafa;
     }
-    h1 {
-      font-size: 2em;
-      color: #000;
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
     }
-    h2 {
-      font-size: 1.3em;
-      color: #444;
-      border-bottom: 1px solid #ddd;
-    }
-    a {
-      color: #0066cc;
+    nav a {
+      color: #fff;
+      margin: 0 10px;
       text-decoration: none;
+      font-weight: bold;
     }
-    a:hover {
+    nav a:hover {
       text-decoration: underline;
     }
-    .authors, .conf {
-      margin-bottom: 1em;
-      font-style: italic;
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    .teaser {
+    .buttons a {
+      display: inline-block;
+      margin: 10px 10px 10px 0;
+      padding: 10px 20px;
+      background: #0066cc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .buttons a:hover {
+      background: #005bb5;
+    }
+    h1 { font-size: 2em; margin-bottom: .2em; }
+    .meta { font-style: italic; color: #555; margin-bottom: 1em; }
+    section { margin-bottom: 2em; }
+    img.teaser {
       width: 100%;
-      max-width: 100%;
       margin: 20px 0;
       border: 1px solid #ccc;
     }
-    .section {
-      margin-top: 2em;
-    }
-    pre {
-      background: #f4f4f4;
-      padding: 10px;
-      overflow-x: auto;
-      font-size: 0.9em;
-    }
+    pre { background: #f4f4f4; padding: 10px; overflow-x: auto; }
+    footer { text-align: center; padding: 20px; font-size: 0.9em; color: #888; }
   </style>
 </head>
 <body>
-  <h1>Your Paper Title Here</h1>
 
-  <div class="authors">Pierre-André Brousseau, Co-author Name, Another Co-author</div>
+<header>
+  <h1>Your Paper Title</h1>
+  <nav>
+    <a href="#abstract">Abstract</a>
+    <a href="#paper">Paper</a>
+    <a href="#bibtex">BibTeX</a>
+    <a href="#code">Code</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <div class="conf">Accepted at <strong>Conference Name 2025</strong>, Location</div>
+<div class="container">
+  <div class="meta">
+    Jane Doe, John Smith • Accepted at <strong>Conference 2025</strong>, Location
+  </div>
 
-  <!-- Optional teaser image -->
-  <!-- <img class="teaser" src="teaser.png" alt="Teaser image" /> -->
+  <div class="buttons">
+    <a href="paper.pdf" target="_blank">📄 Read Paper</a>
+    <a href="https://github.com/your-repo" target="_blank">💻 Code</a>
+    <a href="https://www.youtube.com/watch?v=..." target="_blank">▶️ Video</a>
+  </div>
 
-  <div class="section">
+  <!-- Optional: Teaser image -->
+  <!-- <img src="teaser.png" alt="Teaser image" class="teaser" /> -->
+
+  <section id="abstract">
     <h2>Abstract</h2>
     <p>
-      Replace this paragraph with your paper's abstract. Summarize your contributions, approach, and findings in 3–5 sentences.
+      Replace with your abstract, summarizing the problem, approach, and key findings in 3–5 sentences.
     </p>
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>PDF</h2>
-    <p><a href="paper.pdf" target="_blank">Download Paper</a></p>
-  </div>
-
-  <div class="section">
+  <section id="bibtex">
     <h2>BibTeX</h2>
     <pre>
-@inproceedings{yourBibtexKey,
-  title={Your Paper Title},
-  author={Brousseau, Pierre-André and Coauthor, X},
-  booktitle={Proceedings of Conference Name},
-  year={2025}
+@inproceedings{my2025paper,
+  title = {Your Paper Title},
+  author = {Doe, Jane and Smith, John},
+  booktitle = {Proceedings of Conference 2025},
+  year = {2025}
 }
     </pre>
-  </div>
+  </section>
 
-  <!-- Optional: Code or Video -
+  <section id="code">
+    <h2>Code & Resources</h2>
+    <p><a href="https://github.com/your-repo" target="_blank">GitHub Repository</a></p>
+    <!-- Add more links or badges as needed -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your.email@domain.com">your.email@domain.com</a></p>
+  </section>
+</div>
+
+<footer>
+  © 2025 Your Name • <a href="https://your.website">your.website</a>
+</footer>
+</body>
+</html>
